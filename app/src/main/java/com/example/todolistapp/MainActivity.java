@@ -21,7 +21,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Find a RecyclerView with id task_recyclerview and assign it to variable recyclerView
         RecyclerView recyclerView = findViewById(R.id.task_recyclerview);
+
+
         taskAdapter = new TaskAdapter(taskList);
         recyclerView.setAdapter(taskAdapter);
 
